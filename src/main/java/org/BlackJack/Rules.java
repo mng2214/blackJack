@@ -1,4 +1,4 @@
-package B16MentoringWithArtur.project21;
+package org.BlackJack;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -10,10 +10,6 @@ public class Rules {
     boolean blackJack = false;
     boolean playerLost = false;
 
-
-
-
-
     public Rules() throws InterruptedException {
     }
 
@@ -22,24 +18,6 @@ public class Rules {
         Thread.sleep(2000);
     }
 
-    class Card {
-        private final String name;
-        private final int value;
-
-        public Card(String name, int value) {
-            this.name = name;
-            this.value = value;
-        }
-
-        public String getName() {
-            return name;
-        }
-
-        public int getValue() {
-            return value;
-        }
-
-    }
 
     public int playersHand() throws InterruptedException {
         int pointsPLayer = 0;
@@ -102,7 +80,7 @@ public class Rules {
 
     public int dealerHand(int playerP) throws InterruptedException {
         System.out.println("\n-----------\n");
-      int  pointsDealer = 0;
+        int pointsDealer = 0;
 
         List<Card> deck = new ArrayList<>();
         deck.add(new Card("A", 11));
@@ -152,7 +130,7 @@ public class Rules {
             } else {
                 System.out.println("Player WON!");
             }
-        }else {
+        } else {
             System.out.println("dealer won");
         }
 

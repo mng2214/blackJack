@@ -1,4 +1,4 @@
-package B16MentoringWithArtur.project21;
+package org.BlackJack;
 
 import java.util.Scanner;
 
@@ -16,7 +16,7 @@ public class GameRoom {
 
 
         String playAgain = "";
-        System.out.println("Good evening\nMy name is " + dealer1.dealerName + ". Lets start and GOOD LUCK!\nDealer balance: " + dealer1.dealerBalance);
+        System.out.println("You dealer is " + dealer1.dealerName + ".  Lets start and GOOD LUCK!\nDealer balance: " + dealer1.dealerBalance);
         do {
 
             /*

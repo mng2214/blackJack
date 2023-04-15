@@ -1,4 +1,4 @@
-package B16MentoringWithArtur.project21;
+package org.BlackJack;
 
 public class Player {
     String playerName;
